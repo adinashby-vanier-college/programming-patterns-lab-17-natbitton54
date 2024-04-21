@@ -17,6 +17,7 @@ public class LabSeventeen {
      *
      */
          public static void main(String args[]) {
+             // run from AddBookFrame for better UI background Design 
         // Initialize the database
         DatabaseUtil.initializeDB(); // Ensure tables are created before performing any operations
 
