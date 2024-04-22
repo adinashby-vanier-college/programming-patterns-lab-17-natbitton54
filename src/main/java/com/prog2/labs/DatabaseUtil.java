@@ -22,7 +22,7 @@ public class DatabaseUtil {
     }
 
     public static void initializeDB() {
-        String dropTable = "DROP TABLE IF EXISTS books";
+       // String dropTable = "DROP TABLE IF EXISTS books";
         String createTable = "CREATE TABLE IF NOT EXISTS books ("
                 + "book_id INTEGER PRIMARY KEY, "
                 + "title TEXT NOT NULL, "
@@ -31,7 +31,7 @@ public class DatabaseUtil {
 
         try (Connection conn = connect(); Statement sm = conn.createStatement()) {
             // Drop the table if it exists
-            sm.execute(dropTable);
+          //  sm.execute(dropTable);
             // Create the table
             sm.execute(createTable);
         } catch (SQLException e) {
